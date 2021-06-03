@@ -2,5 +2,5 @@
 惡意程式payload
 
 encode
-1. xor 17
+1. xor 0xAA
 2. base64 encode
